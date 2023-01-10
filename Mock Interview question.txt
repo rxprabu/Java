@@ -1,0 +1,147 @@
+------------------------------------Interview Question about Java-----------------------------------------------
+   Start--> About Yourself!   
+
+1.Can you explain what a Java class is?
+     Class represents a category for objects with similar methods or properties. 
+It's used as a blueprint for design in any object-oriented programming.
+
+2.What are some common classes in Java?
+      There are so many classes in Java. A few essentials are final, static, concrete, abstract, inner and POJO. 
+Would you like me to elaborate on how I use these in app development?
+
+3.What are the key differences between C++ and Java?
+              C++ 	                                                                          Java
+1) C++ is platform dependent. 	                                        1) Java is platform-independent.
+2) C++  writes structural programs without using classes and objects. 	2) Java is a pure object-oriented language except for the primitive variables.
+3) C++ doesn’t support documentation comments. 	                        3) Java supports documentation comment (/**…*/) to create documentation for java code.
+4) C++ fully supports pointers. 	                                4) In Java, there is no concept of pointers.
+5) C++ supports multiple inheritance.                               	5) Java doesn’t support multiple inheritance.
+
+4.Explain the JVM architecture?
+   Java Virtual Machine is the abstract machine or specification that provides a runtime environment to execute the bytecode. JVM supports Java and many other languages known as JVM languages, the program written in these languages is compiled into the bytecode and then executed by the JVM. contains key components which are classloader, memory area, execution engine etc.
+
+a) Classloader
+
+It is a subsystem of JVM which load class files. Whenever a Java program is run, it is loaded by the classloader.
+
+b) Class Area
+
+Class Area holds class-level data of each class file such as metadata, constant run pool, and static variables.
+
+c) Heap
+
+It is the runtime data which is used for allocating objects.
+
+d) Stack
+
+The stack is used for storing temporary variable. This component has a stack frame which is allocated one frame to each thread and when the execution of the thread is completed then that frame is also gets destroyed.
+
+e) Registers
+
+This component contains the address of JVM instruction which currently being executed.
+
+f) Native Method Stack
+
+All the native method stack used in the application are stored in this.
+
+g) Execution Engine
+
+It contains:
+
+    A virtual processor
+    An interpreter that executes the instructions after reading the bytecode.
+    JIT compiler, used for improving the performance due to the slow execution. It compiles the similar part of the bytecode at the same time which reduces the total time needed for compilation.
+
+h) Java Native Interface
+
+It provides an interface which is needed for communicating with another application developed in another language like C, C++, C# etc.
+
+
+5.What is the use of Classloader in Java?
+
+       A Java program is made up of a different number of custom classes and pre-defined classes. When a program is executed, JVM is used to load all the content of that needed class and through the use of Classloader JVM, it finds that class.
+
+There are three types of Classloaders:
+
+    System Class Loader:
+
+It loads all the classes from the classpath.
+
+    Extension ClassLoader:
+
+It loads all the classes from the extension directory.
+
+    Bootstrap Class Loader:
+
+It loads all the pre-defined java classes.
+
+
+6.Which class is a superclass of all classes?
+                 Java.lang.The object is the root class for all the java classes and we don’t need to extend it. 
+Every other java classes fall back under the object. 
+All the different non-primitive types including arrays are inherited directly or indirectly from this class.
+
+7.What are finally and finalize in Java?
+           Finally block is used with a try-catch block to put the code that you always want to get executed even the execution is thrown by the try-catch block. 
+ Finally is just used for releasing the resources which were created by the try block.
+
+Finalize() is a special method in Object class that we can override in our classes.
+ Finalize() is called by the Garbage collector to collect the garbage value when the object is getting it. 
+This method is generally overridden to release the system resources when garbage value is collected from the object.
+
+8.What is an Iterator?
+    Iterator interface provides methods to iterate over any collection. We can get iterator instance from a collection using iterator() method. 
+Iterator takes the place of Enumeration in the Java Collection Framework. 
+The iterator allows the caller to remove elements from the underlying collection during the iteration. 
+
+9.Explain the Java Exception Hierarchy.
+    Java Exceptions are hierarchical and inheritance is used for categorizing the different types of exceptions.
+ Throwable is the parent class of Java Exceptions Hierarchy and it has two child objects – Error and Exceptions.
+
+Errors are exceptional scenarios which are out of the scope of applications and it’s not possible to anticipate and recover from them, for example, hardware failure, JVM crash or out of memory error.
+ Exceptions are further divided into checked and runtime exception.
+Java Collection iterator provides a generic way for transversal elements of a collection and implements Iterator Design Pattern.
+
+10.What is the benefit of a multi-catch block in Java?
+        With multi-catch blocks, code is shorter. This makes code easier to create and easier for others to interpret.
+ Also, making exception parameters final is less complex with this format.
+
+11.Can you describe the difference between JDK and JVM?
+   JDK is a software development kit, and JVM is what allows Java to run on a device. 
+Without JVM, the apps I create using the tools in JDK wouldn't work on people's phones or tablets.
+
+12.Can you explain serialization and deserialization?
+      Serialization and deserialization are crucial to stream handling in Java. 
+When you serialize an object in Java, you convert it to byte stream so it can be saved or relocated to another device. 
+Deserializing simply undoes that process.
+
+13.What is a ternary operator?
+    A ternary operator is a conditional operator in Java. It decides which values are assigned to a variable.
+
+14.Can you describe what an interface is?
+    An interface is similar to class because it is a reference type and it defines methods.
+ It is distinct from class because it does not implement methods.
+
+15.What is Thread Scheduler and Time Slicing?
+      Thread Scheduler is Operating System service which allocates the CPU time to the available runnable threads. 
+Once a thread is created and it’s in the runnable phase then its execution depends on the implementation of the Thread Scheduler.
+
+Time Slicing is a process of dividing available CPU time among the various runnable threads. 
+Allocation of CPU time will depend on the thread priority or for how much time it is in the waiting state for getting the CPU time. 
+Thread Scheduling cannot be controlled by Java, so it’s always better to control it by the application itself.
+
+16.Why nested class and inner class be static class and wrapper class?
+
+17.Can we create object outside the main method()?
+
+18.Why Javascript is dynamically typed program language?
+
+19.Can we use this & Super keyword in main method?
+
+20.What is your favorite aspect of Java?
+
+21.What is the biggest challenge you have ever had with Java?
+
+22.What is the most impressive thing you have ever used Java to do?
+
+---------------------------------end-------------------------------------------------------------
